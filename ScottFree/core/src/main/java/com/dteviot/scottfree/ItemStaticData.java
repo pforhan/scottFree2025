@@ -54,7 +54,8 @@ public class ItemStaticData {
   }
 
   public int getStartLocation() {
-    return mStartLocation;
+    return (mStartLocation == Item.CARRIED_ALT)
+        ? Item.Carried : mStartLocation;
   }
 
   public int getNounCode() {

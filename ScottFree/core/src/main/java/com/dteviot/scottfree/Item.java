@@ -1,15 +1,20 @@
 package com.dteviot.scottfree;
 
-/*
+/**
  * A "thing" in adventure that can be picked up, looked at, manipulated, etc.
  */
 public class Item {
-  /*
+  /**
    * location code that indicates object is carried
    */
   public final static int Carried = 255;
 
-  /*
+  /**
+   * location code that indicates object is carried (-1 for bytes would be 255)
+   */
+  public static final int CARRIED_ALT = -1;
+
+  /**
    * location code that indicates object is destroyed
    */
   public final static int Destroyed = 0;
